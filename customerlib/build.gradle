@@ -2,16 +2,15 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
-version = "1.0.1"                                                              // #CONFIG# // project version
+version = "1.0.2"                                                              // #CONFIG# // project version
 
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
-    // resourcePrefix "less_"                                                  // #CONFIG# // please remove this if you don't known it
     defaultConfig {
         minSdkVersion 9
         targetSdkVersion 23
-        versionCode 1
+        versionCode 2
         versionName "1.0"
     }
     buildTypes {
@@ -25,9 +24,11 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:support-v4:23.2.1'
-//    compile 'com.android.support:recyclerview-v7:23.2.1'
+    compile 'com.android.support:recyclerview-v7:23.2.1'
     compile 'io.reactivex:rxandroid:1.0.1'
     compile 'io.reactivex:rxandroid:1.0.1'
+    compile 'com.nineoldandroids:library:2.4.0'
+
 }
 
 def siteUrl = 'https://github.com/foreverxiongtao/CustomerLib'                        // #CONFIG# // project homepage
@@ -117,4 +118,3 @@ bintray {
         publish = true
     }
 }
-//apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle'

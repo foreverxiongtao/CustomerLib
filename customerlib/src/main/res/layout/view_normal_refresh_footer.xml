@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bear.customerview.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_normal_refresh_footer_chrysanthemum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20px"
+        android:src="@anim/loading"/>
+
+    <TextView
+        android:id="@+id/tv_normal_refresh_footer_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30px"
+        android:layout_marginTop="30px"
+        android:text="加载中..."
+        android:textColor="#777"
+        android:textSize="12sp" />
+</com.bear.customerview.autolayout.AutoLinearLayout>

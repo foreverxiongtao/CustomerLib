@@ -1,1 +1,1 @@
-include ':app', ':customerlib'
+include ':customerlib', ':myapplication'

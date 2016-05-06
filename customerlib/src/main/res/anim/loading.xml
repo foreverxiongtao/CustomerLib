@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<!--   
+    根标签为animation-list，其中oneshot代表着是否只展示一遍，设置为false会不停的循环播放动画  
+    根标签下，通过item标签对动画中的每一个图片进行声明  
+    android:duration 表示展示所用的该图片的时间长度  
+ -->  
+<animation-list  
+  xmlns:android="http://schemas.android.com/apk/res/android"  
+  android:oneshot="false"  
+  >  
+ <item android:drawable="@drawable/load_35" android:duration="20"></item>
+     <item android:drawable="@drawable/load_34" android:duration="20"></item>
+     <item android:drawable="@drawable/load_35" android:duration="20"></item>
+     <item android:drawable="@drawable/load_34" android:duration="20"></item>
+    <item android:drawable="@drawable/load" android:duration="25"></item>
+    <item android:drawable="@drawable/load_0" android:duration="25"></item>
+    <item android:drawable="@drawable/load_1" android:duration="25"></item>
+    <item android:drawable="@drawable/load_2" android:duration="25"></item>
+    <item android:drawable="@drawable/load_3" android:duration="25"></item>
+    <item android:drawable="@drawable/load_4" android:duration="25"></item>
+    <item android:drawable="@drawable/load_5" android:duration="25"></item>
+    <item android:drawable="@drawable/load_6" android:duration="25"></item>
+    <item android:drawable="@drawable/load_7" android:duration="25"></item>
+    <item android:drawable="@drawable/load_8" android:duration="25"></item>
+    <item android:drawable="@drawable/load_9" android:duration="25"></item>
+    <item android:drawable="@drawable/load_10" android:duration="25"></item>
+    <item android:drawable="@drawable/load_11" android:duration="25"></item>
+    <item android:drawable="@drawable/load_12" android:duration="25"></item>
+    <item android:drawable="@drawable/load_13" android:duration="25"></item>
+    <item android:drawable="@drawable/load_14" android:duration="25"></item>
+    <item android:drawable="@drawable/load_15" android:duration="25"></item>
+    <item android:drawable="@drawable/load_16" android:duration="25"></item>
+    <item android:drawable="@drawable/load_17" android:duration="25"></item>
+    <item android:drawable="@drawable/load_18" android:duration="25"></item>
+    <item android:drawable="@drawable/load_19" android:duration="25"></item>
+    <item android:drawable="@drawable/load_20" android:duration="25"></item>
+    <item android:drawable="@drawable/load_21" android:duration="25"></item>
+    <item android:drawable="@drawable/load_22" android:duration="25"></item>
+    <item android:drawable="@drawable/load_23" android:duration="25"></item>
+    <item android:drawable="@drawable/load_24" android:duration="25"></item>
+    <item android:drawable="@drawable/load_25" android:duration="25"></item>
+    <item android:drawable="@drawable/load_26" android:duration="25"></item>
+    <item android:drawable="@drawable/load_27" android:duration="25"></item>
+    <item android:drawable="@drawable/load_28" android:duration="25"></item>
+    <item android:drawable="@drawable/load_29" android:duration="25"></item>
+    <item android:drawable="@drawable/load_30" android:duration="25"></item>
+    <item android:drawable="@drawable/load_31" android:duration="25"></item>
+    <item android:drawable="@drawable/load_32" android:duration="25"></item>
+    <item android:drawable="@drawable/load_33" android:duration="25"></item>
+    <item android:drawable="@drawable/load_34" android:duration="20"></item>   
+</animation-list>

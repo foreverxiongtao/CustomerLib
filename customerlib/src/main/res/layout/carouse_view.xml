@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CirclePageIndicator="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ad_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.bear.customerview.infiniteviewpager.InfiniteViewPager
+        android:id="@+id/ivp_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <com.bear.customerview.infiniteviewpager.indicator.CirclePageIndicator
+        android:id="@+id/indicator"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp" />
+</RelativeLayout>
