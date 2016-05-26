@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bear.customerview.autolayout.AutoLinearLayout
+    android:id="@+id/ll_vertical_notication_scroll_bar_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:animateLayoutChanges="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/darker_gray"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_notication_horn"/>
+
+    <com.bear.customerview.verticalnoticationscrollbar.SwitchViewGroup
+        android:id="@+id/switchViewGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="5px"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="5px"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/iv_layout_vertical_notication_scroll_bar_close"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="20px"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_notication_close"
+        android:visibility="gone"/>
+</com.bear.customerview.autolayout.AutoLinearLayout>

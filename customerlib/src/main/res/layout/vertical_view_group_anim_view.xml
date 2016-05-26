@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bear.customerview.autolayout.AutoLinearLayout
+    android:id="@+id/anim_linear_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/no_color"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical">
+
+    <com.bear.customerview.autolayout.AutoLinearLayout
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/no_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/stoke_round_corner_base_normal"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="活动"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/anim_first_content_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:gravity="center"
+            android:padding="10px"
+            android:textColor="@android:color/white"
+            android:textSize="25px"
+            android:visibility="gone"/>
+    </com.bear.customerview.autolayout.AutoLinearLayout>
+
+    <com.bear.customerview.autolayout.AutoLinearLayout
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/no_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/stoke_round_corner_base_normal"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="活动"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/anim_second_content_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:paddingBottom="10px"
+            android:paddingTop="10px"
+            android:textColor="@android:color/white"
+            android:textSize="25px"/>
+    </com.bear.customerview.autolayout.AutoLinearLayout>
+</com.bear.customerview.autolayout.AutoLinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="no_color">#00FFFFFF</color>
+    <color name="base_normal">#22ffb5</color>
+    <color name="deep_transparent">#b0000000</color>
+    <color name="price_text_black">#232a2e</color>
+</resources>

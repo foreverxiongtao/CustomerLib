@@ -55,6 +55,7 @@ public class CarouseView extends LinearLayout {
     private int mSlideSpeed = 400;
     /*轮播图轮播间隔的时间 默认是4秒*/
     private long mDelayTime = 4000;
+    private ImageView mIvCarouseView;
 
     public CarouseView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -77,6 +78,7 @@ public class CarouseView extends LinearLayout {
     private void init() {
         LayoutInflater.from(mContext).inflate(R.layout.carouse_view, this);
         mViewPager = (InfiniteViewPager) findViewById(R.id.ivp_pager);
+        mIvCarouseView = (ImageView) findViewById(R.id.iv_carouse_view);
         mIndicator = (CirclePageIndicator) findViewById(R.id.indicator);
     }
 
@@ -164,6 +166,9 @@ public class CarouseView extends LinearLayout {
     * */
     public void setImageResources(List<String> imageUrlList, ImageCycleViewListener imageCycleViewListener) {
         // 图片广告数量
+        if (imageUrlList == null || imageUrlList.isEmpty()) {
+            return;
+        }
         final int imageCount = imageUrlList.size();
         mViewPager.setVisibility(View.VISIBLE);
           /*
@@ -177,14 +182,22 @@ public class CarouseView extends LinearLayout {
             mViewPager.setOnPageChangeListener(mListener);
         }
         if (imageCount > 0) {
-            mMPAdapter = new MockPagerAdapter(mContext, imageCycleViewListener, mViewPager, isCarouseAutoPlay);
-            mMPAdapter.setDataList(imageUrlList);
-            mViewPager.setAdapter(mMPAdapter);
             if (imageCount == 1) {
                 /** 如果只有一张图片那么禁止LoopViewPager的滑动并且禁止自动轮播,不显示小圆点 */
+                mIvCarouseView.setVisibility(View.VISIBLE);
+                mIndicator.setVisibility(View.GONE);
+                mViewPager.setVisibility(View.GONE);
+                imageCycleViewListener.displayImage(imageUrlList.get(0), mIvCarouseView);
+                imageCycleViewListener.onImageClick(0, mIvCarouseView);
+                return;
             } else {
+                mMPAdapter = new MockPagerAdapter(mContext, imageCycleViewListener, mViewPager, isCarouseAutoPlay);
+                mMPAdapter.setDataList(imageUrlList);
+                mViewPager.setAdapter(mMPAdapter);
                 /** 大于一张图片,显示小圆点*/
                 mIndicator.setVisibility(View.VISIBLE);
+                mViewPager.setVisibility(View.VISIBLE);
+                mIvCarouseView.setVisibility(View.GONE);
                 mIndicator.setViewPager(mViewPager);
             }
         }
@@ -272,7 +285,6 @@ class MockPagerAdapter extends InfinitePagerAdapter {
     @Override
     public int getItemCount() {
         return mList == null ? 0 : mList.size();
-
     }
 
     private class ViewHolder {
