@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.bear.customerview.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.desperado.customerlib.view.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="center"
@@ -21,4 +21,4 @@
         android:text="加载中..."
         android:textColor="#777"
         android:textSize="12sp" />
-</com.bear.customerview.autolayout.AutoLinearLayout>
+</com.desperado.customerlib.view.autolayout.AutoLinearLayout>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.bear.customerview.autolayout.AutoLinearLayout
+<com.desperado.customerlib.view.autolayout.AutoLinearLayout
     android:id="@+id/anim_linear_layout"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -8,7 +8,7 @@
     android:animateLayoutChanges="true"
     android:orientation="vertical">
 
-    <com.bear.customerview.autolayout.AutoLinearLayout
+    <com.desperado.customerlib.view.autolayout.AutoLinearLayout
         android:animateLayoutChanges="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -38,9 +38,9 @@
             android:textColor="@android:color/white"
             android:textSize="25px"
             android:visibility="gone"/>
-    </com.bear.customerview.autolayout.AutoLinearLayout>
+    </com.desperado.customerlib.view.autolayout.AutoLinearLayout>
 
-    <com.bear.customerview.autolayout.AutoLinearLayout
+    <com.desperado.customerlib.view.autolayout.AutoLinearLayout
         android:animateLayoutChanges="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -69,5 +69,5 @@
             android:paddingTop="10px"
             android:textColor="@android:color/white"
             android:textSize="25px"/>
-    </com.bear.customerview.autolayout.AutoLinearLayout>
-</com.bear.customerview.autolayout.AutoLinearLayout>
+    </com.desperado.customerlib.view.autolayout.AutoLinearLayout>
+</com.desperado.customerlib.view.autolayout.AutoLinearLayout>
