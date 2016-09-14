@@ -4,4 +4,6 @@
     <color name="base_normal">#22ffb5</color>
     <color name="deep_transparent">#b0000000</color>
     <color name="price_text_black">#232a2e</color>
+    <color name="gray_4">#eaeaea</color>
+    <color name="bg_gray">#f0f0f2</color>
 </resources>

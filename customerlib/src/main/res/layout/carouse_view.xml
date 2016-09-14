@@ -12,14 +12,14 @@
         android:scaleType="fitXY"
         android:visibility="gone"/>
 
-    <com.bear.customerview.infiniteviewpager.InfiniteViewPager
+    <com.desperado.customerlib.view.infiniteviewpager.InfiniteViewPager
         android:id="@+id/ivp_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"/>
 
 
-    <com.bear.customerview.infiniteviewpager.indicator.CirclePageIndicator
+    <com.desperado.customerlib.view.infiniteviewpager.indicator.CirclePageIndicator
         android:id="@+id/indicator"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
